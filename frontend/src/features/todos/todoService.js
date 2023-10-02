@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://todo-backend-mc90.onrender.com/api/todos/";
+const API_URL = "/api/todos/";
 
 // create new todo
 
