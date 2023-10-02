@@ -34,13 +34,13 @@ git clone https://github.com/prasadbylapudi/Nirvedha-Task.git
 
 ## Getting Started
 ## installing dependencies 
-`cd frontend`
-`npm install`
-`npm start`
+`cd frontend`.
+`npm install`.
+`npm start` .
 
-`cd backend`
-`npm install`
-`npm start`
+`cd backend` .
+`npm install` .
+`npm start` .
 
 
 
