@@ -2,6 +2,8 @@
 
 A simple Todo application built with MERN Stack.
 
+# View the live hosted application here [Todo application](https://nirvedha-task.vercel.app/login)
+
 
 ## Technologies Used
 
@@ -11,22 +13,24 @@ A simple Todo application built with MERN Stack.
 - [MongoDB](https://www.mongodb.com/)
 - [Node.js](https://nodejs.org/)
 
-## API Documentation
+ Clone the repository:
 
-### Authentication
-
-#### Register User
-
-
+```bash
+git clone https://github.com/prasadbylapudi/Nirvedha-Task.git
+```
 
 
-
-# Install frontend dependencies
+# Install frontend and backend dependencies
 cd frontend
 npm install
+npm start
 
-# Install backend dependencies
-cd ../backend
+cd backend
 npm install
+npm start
+
+
+
+
 
 
