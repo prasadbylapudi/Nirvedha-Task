@@ -43,9 +43,6 @@ git clone https://github.com/prasadbylapudi/Nirvedha-Task.git
 `npm start` 
 
 
-
-Certainly! Below is the API documentation for your Todo App, presented in the format you provided:
-
 ---
 
 
