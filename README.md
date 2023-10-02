@@ -1,64 +1,96 @@
-# MERN Stack Project
+# Todo App
 
-This project was created with the mern stack,with user authentication enabled,using JWT authentication
+A simple Todo application built with [technologies used] for [brief description].
 
-## Install dependencies
+## Table of Contents
 
-Backend deps
+- [Technologies Used](#technologies-used)
+- [API Documentation](#api-documentation)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm install`
+## Technologies Used
 
-Frontend deps
+- [React](https://reactjs.org/)
+- [Redux](https://redux.js.org/)
+- [Express](https://expressjs.com/)
+- [MongoDB](https://www.mongodb.com/)
+- [Node.js](https://nodejs.org/)
+
+## API Documentation
+
+### Authentication
+
+#### Register User
+
+Register a new user.
+
+- **URL:** `/api/users`
+- **Method:** `POST`
+- **Request Body:**
+
+  ```json
+  {
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "password": "password123"
+  }
+
+{
+  "token": "your-access-token"
+}
+
+Login User
+Log in an existing user.
+
+URL: /api/users/login
+
+Method: POST
+
+Request Body:
+
+json
+Copy code
+{
+  "email": "johndoe@example.com",
+  "password": "password123"
+}
+
+Response:
+{
+  "token": "your-access-token"
+}
+
+Get User Profile
+Get the user's profile.
+
+URL: /api/users/me
+
+Method: GET
+
+Headers:
+
+makefile
+Copy code
+Authorization: Bearer your-access-token
+Response:
+
+json
+{
+  "name": "John Doe",
+  "email": "johndoe@example.com"
+}
+
+
+# Install frontend dependencies
 cd frontend
-`npm install`
+npm install
 
-## Run server
+# Install backend dependencies
+cd ../backend
+npm install
 
-### `npm run server`
 
-# Getting Started with Create React App and Redux
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
