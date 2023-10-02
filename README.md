@@ -34,19 +34,172 @@ git clone https://github.com/prasadbylapudi/Nirvedha-Task.git
 
 ## Getting Started
 ## installing dependencies 
-`cd frontend`.
-`npm install`.
-`npm start` .
+`cd frontend`
+`npm install`
+`npm start` 
 
-`cd backend` .
-`npm install` .
-`npm start` .
-
-
+`cd backend` 
+`npm install` 
+`npm start` 
 
 
 
+Certainly! Below is the API documentation for your Todo App, presented in the format you provided:
 
+---
+
+
+## Authentication
+
+### Register User
+
+**URL**: `/api/users/`
+
+**Method**: `POST`
+
+**Description**: Register a new user.
+
+**Request Body**:
+
+- `name` (string): The name of the user.
+- `email` (string): The email address of the user.
+- `password` (string): The password for the user.
+
+**Example Request**:
+
+```json
+POST /api/users/
+{
+  "name": "John Doe",
+  "email": "johndoe@example.com",
+  "password": "securepassword"
+}
+```
+
+### Login User
+
+**URL**: `/api/users/login`
+
+**Method**: `POST`
+
+**Description**: Log in an existing user.
+
+**Request Body**:
+
+- `email` (string): The email address of the user.
+- `password` (string): The password for the user.
+
+**Example Request**:
+
+```json
+POST /api/users/login
+{
+  "email": "johndoe@example.com",
+  "password": "securepassword"
+}
+```
+
+### Logout User
+
+**Description**: Log out the currently logged-in user.
+
+**URL**: `/api/users/logout`
+
+**Method**: `GET`
+
+**Example Request**:
+
+```json
+GET /api/users/logout
+```
+
+---
+
+## Todo Management
+
+### Create Todo
+
+**URL**: `/api/todos`
+
+**Method**: `POST`
+
+**Description**: Create a new todo.
+
+**Request Body**:
+
+- `text` (string): The text content of the todo.
+- `isCompleted` (boolean): Indicates whether the todo is completed.
+
+**Example Request**:
+
+```json
+POST /api/todos
+{
+  "text": "Finish API documentation",
+  "isCompleted": false
+}
+```
+
+### Get All Todos
+
+**URL**: `/api/todos`
+
+**Method**: `GET`
+
+**Description**: Get a list of all todos.
+
+**Example Request**:
+
+```json
+GET /api/todos
+```
+
+### Update Todo
+
+**URL**: `/api/todos/:id`
+
+**Method**: `PUT`
+
+**Description**: Update a specific todo by its ID.
+
+**Request Parameters**:
+
+- `id` (string): The unique ID of the todo to be updated.
+
+**Request Body**:
+
+- `text` (string): The updated text content of the todo.
+- `isCompleted` (boolean): Indicates whether the todo is completed.
+
+**Example Request**:
+
+```json
+PUT /api/todos/12345
+{
+  "text": "Updated task description",
+  "isCompleted": true
+}
+```
+
+### Delete Todo
+
+**URL**: `/api/todos/:id`
+
+**Method**: `DELETE`
+
+**Description**: Delete a specific todo by its ID.
+
+**Request Parameters**:
+
+- `id` (string): The unique ID of the todo to be deleted.
+
+**Example Request**:
+
+```json
+DELETE /api/todos/12345
+```
+
+---
 
 
 
