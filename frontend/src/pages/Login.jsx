@@ -6,12 +6,12 @@ import { toast } from "react-toastify";
 import { login, reset } from "../features/auth/authSlice";
 import Spinner from "../components/Spinner";
 
-const Login = () => {
+const Login = () => {      
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
-
+  
   const { email, password } = formData;
 
   const navigate = useNavigate();
